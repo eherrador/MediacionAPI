@@ -16,6 +16,8 @@
     <PackageReference Include="Nethereum.JsonRpc.Client" Version="2.5.1" />
     <PackageReference Include="Nethereum.Web3" Version="2.5.1" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
+    <PackageReference Include="System.Text.Encoding" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup>
