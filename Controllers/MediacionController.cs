@@ -123,12 +123,17 @@ namespace mediacionAPI.Controllers
                 //geth = new Web3Geth(account, "http://localhost:8501");  //Clique
                 try
                 {
+                    /**** Kaleido ****/
                     var byteArray = Encoding.ASCII.GetBytes("u0n94z8hht:xt7u8OJu_88nAEvOeZ1wHqyT3Xz1a2cBuw0RRWQ3mL0");
                     AuthenticationHeaderValue autenticacion = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
                     var client = new RpcClient(new Uri("https://u0yaaa1f6n-u0s4p500nd-rpc.us-east-2.kaleido.io"),autenticacion);
                     geth = new Nethereum.Web3.Web3(client);
-                    
+                    /*****************/
+
+                    /****** Clique *****/
                     //var unlockAccountResult = await geth.Personal.UnlockAccount.SendRequestAsync(cjaAddress, password, 120);
+                    /*****************/
+                    
                     var transactionHash = await geth.Eth.DeployContract.SendRequestAsync(abi, bytecode, mediadorAddress, new Nethereum.Hex.HexTypes.HexBigInteger(900000));
                     var receipt = await geth.Eth.Transactions.GetTransactionReceipt.SendRequestAsync(transactionHash);
                     while (receipt == null)
