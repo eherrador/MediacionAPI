@@ -87,7 +87,7 @@ namespace mediacionAPI.Controllers
 
             //return "Ready";
             //return Ok(new string[] { "value1", "value2" });
-            return Ok("Se ha creado una nueva Mediación");
+            return Ok("Se ha creado una nueva Mediacion");
         }
 
         //Actualiza Token de Mediciación
@@ -112,7 +112,7 @@ namespace mediacionAPI.Controllers
             }
 
             //return new string[] { "value1", "value2" };
-            return Ok("Se han agregados nuevos documentos a la Mediación" + idMediacion.ToString());
+            return Ok("Se han agregados nuevos documentos a la Mediacion" + idMediacion.ToString());
         }
 
         private async Task VerificaExistenciaSmartContract() 
