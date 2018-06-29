@@ -119,10 +119,8 @@ namespace mediacionAPI.Controllers
         {
             if (contractAddress == string.Empty)
             {
-                //a managed account uses personal_sendTransanction with the given password,
-                //this way we don't need to unlock the account for a certain period of time
-                account = new ManagedAccount(mediadorAddress, password);
-                //geth = new Web3Geth(account, "http://localhost:8501");
+                account = new ManagedAccount(mediadorAddress, password);  //Kaleido
+                //geth = new Web3Geth(account, "http://localhost:8501");  //Clique
                 try
                 {
                     var byteArray = Encoding.ASCII.GetBytes("u0n94z8hht:xt7u8OJu_88nAEvOeZ1wHqyT3Xz1a2cBuw0RRWQ3mL0");
