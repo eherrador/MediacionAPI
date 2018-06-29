@@ -51,11 +51,6 @@ namespace mediacionAPI.Controllers
         {
             try 
             {
-                foreach (JObject item in documentos)
-                {
-                    string descripcion = item.GetValue("descripcion").ToString();
-                    string ipfsHash = item.GetValue("ipfsHash").ToString();
-                }
                 await VerificaExistenciaSmartContract();
                 var contract = geth.Eth.GetContract(abi, contractAddress);
 
@@ -64,12 +59,18 @@ namespace mediacionAPI.Controllers
                 var seCreoNuevaMediacionEvent = contract.GetEvent("SeCreoNuevaMediacion");
                 //var mediaciones = contract.GetFunction("mediaciones");
 
-                var transactionHash = await creaNuevaMediacionFunction.SendTransactionAsync(mediadorAddress, new HexBigInteger(900000), null, "123qwe456asd", cjaAddress);
+                foreach (JObject item in documentos)
+                {
+                    string descripcion = item.GetValue("descripcion").ToString();
+                    string ipfsHash = item.GetValue("ipfsHash").ToString();
 
-                var receipt = await geth.Eth.Transactions.GetTransactionReceipt.SendRequestAsync(transactionHash);
-                while (receipt == null){
-                    Thread.Sleep(5000);
-                    receipt = await geth.Eth.Transactions.GetTransactionReceipt.SendRequestAsync(transactionHash);
+                    var transactionHash = await creaNuevaMediacionFunction.SendTransactionAsync(mediadorAddress, new HexBigInteger(900000), null, descripcion, idMediacion, ipfsHash, cjaAddress);
+
+                    var receipt = await geth.Eth.Transactions.GetTransactionReceipt.SendRequestAsync(transactionHash);
+                    while (receipt == null){
+                        Thread.Sleep(5000);
+                        receipt = await geth.Eth.Transactions.GetTransactionReceipt.SendRequestAsync(transactionHash);
+                    }
                 }
 
                 var result0 = await mediacionStruct.CallDeserializingToObjectAsync<Mediacion>(mediadorAddress, 0);
@@ -133,7 +134,7 @@ namespace mediacionAPI.Controllers
                     /****** Clique *****/
                     //var unlockAccountResult = await geth.Personal.UnlockAccount.SendRequestAsync(cjaAddress, password, 120);
                     /*****************/
-                    
+
                     var transactionHash = await geth.Eth.DeployContract.SendRequestAsync(abi, bytecode, mediadorAddress, new Nethereum.Hex.HexTypes.HexBigInteger(900000));
                     var receipt = await geth.Eth.Transactions.GetTransactionReceipt.SendRequestAsync(transactionHash);
                     while (receipt == null)
