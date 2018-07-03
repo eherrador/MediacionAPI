@@ -20,14 +20,3 @@
 /Users/edgarherrador/Documents/GitHub/Mediacion/mediacion/devcode/mediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.AssemblyInfo.cs
 /Users/edgarherrador/Documents/GitHub/Mediacion/mediacion/devcode/mediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.dll
 /Users/edgarherrador/Documents/GitHub/Mediacion/mediacion/devcode/mediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.pdb
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/bin/Debug/netcoreapp2.0/mediacionAPI.deps.json
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/bin/Debug/netcoreapp2.0/mediacionAPI.runtimeconfig.json
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/bin/Debug/netcoreapp2.0/mediacionAPI.runtimeconfig.dev.json
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/bin/Debug/netcoreapp2.0/mediacionAPI.dll
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/bin/Debug/netcoreapp2.0/mediacionAPI.pdb
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.csprojResolveAssemblyReference.cache
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.csproj.CoreCompileInputs.cache
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.AssemblyInfoInputs.cache
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.AssemblyInfo.cs
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.dll
-/Users/edgarherrador/Documents/GitHub/MediacionAPI/obj/Debug/netcoreapp2.0/mediacionAPI.pdb
