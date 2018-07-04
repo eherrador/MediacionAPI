@@ -151,7 +151,7 @@ namespace mediacionAPI.Controllers
             var byteArray = Encoding.ASCII.GetBytes("u0n94z8hht:xt7u8OJu_88nAEvOeZ1wHqyT3Xz1a2cBuw0RRWQ3mL0");
             AuthenticationHeaderValue autenticacion = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
             var client = new RpcClient(new Uri("https://u0yaaa1f6n-u0s4p500nd-rpc.us-east-2.kaleido.io"),autenticacion);
-            var geth = new Web3(client);
+            geth = new Web3(client);
             /*****************/
         }
 

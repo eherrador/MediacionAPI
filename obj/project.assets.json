@@ -12689,11 +12689,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/edgarherrador/Documents/GitHub/Mediacion/mediacion/devcode/mediacionAPI/mediacionAPI.csproj",
+      "projectUniqueName": "/Users/edgarherrador/Documents/GitHub/MediacionAPI/mediacionAPI.csproj",
       "projectName": "mediacionAPI",
-      "projectPath": "/Users/edgarherrador/Documents/GitHub/Mediacion/mediacion/devcode/mediacionAPI/mediacionAPI.csproj",
+      "projectPath": "/Users/edgarherrador/Documents/GitHub/MediacionAPI/mediacionAPI.csproj",
       "packagesPath": "/Users/edgarherrador/.nuget/packages/",
-      "outputPath": "/Users/edgarherrador/Documents/GitHub/Mediacion/mediacion/devcode/mediacionAPI/obj/",
+      "outputPath": "/Users/edgarherrador/Documents/GitHub/MediacionAPI/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
