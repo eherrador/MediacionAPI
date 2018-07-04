@@ -155,7 +155,6 @@ namespace mediacionAPI.Controllers
 
         private async Task VerificaExistenciaSmartContract() 
         {
-            //if (contractAddress == string.Empty)
             if (_smartContractConfiguration.SmartContractDeployed == false)
             {
                 try
